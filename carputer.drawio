@@ -1,0 +1,348 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram id="volvo_rti_android_auto" name="Volvo XC70 RTI Android Auto">
+    <mxGraphModel dx="899" dy="475" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-64" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff3e0;fontColor=#e65100;strokeColor=#fb8c00;fontStyle=1;fontSize=13;" value="DASHBOARD (CENTER TOP) - MOTORIZED RTI 6.5&quot; HOUSING" vertex="1">
+          <mxGeometry height="430" width="400" x="10" y="4" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-67" parent="-IJ7pIzzXDoVgF_IWRut-64" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffab91;strokeColor=#d84315;align=left;spacingLeft=8;" value="&lt;b&gt;12V RTI DC Lift Motor&lt;/b&gt;&lt;hr&gt;Lead screw elevation mechanism&lt;br&gt;Polarity reversed by L298N bridge" vertex="1">
+          <mxGeometry height="85" width="220" x="115" y="324" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-65" parent="-IJ7pIzzXDoVgF_IWRut-64" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe082;strokeColor=#ffa000;align=left;spacingLeft=8;" value="&lt;b&gt;RTD2660H LCD Driver Board&lt;/b&gt;&lt;hr&gt;• 12V Power: Switched Relay 1&lt;br&gt;• Video IN: HDMI from Raspberry Pi&lt;br&gt;• IR Receiver: for brightness control" vertex="1">
+          <mxGeometry height="95" width="220" x="115" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-66" parent="-IJ7pIzzXDoVgF_IWRut-64" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff9c4;strokeColor=#fbc02d;align=left;spacingLeft=8;" value="&lt;b&gt;6.5&quot; LCD Panel (AT065TN14)&lt;/b&gt;&lt;hr&gt;800x480 Widescreen Display&lt;br&gt;&lt;i&gt;Mounted inside RTI moving carriage&lt;/i&gt;" vertex="1">
+          <mxGeometry height="85" width="215" x="115" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-115" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-64" source="-IJ7pIzzXDoVgF_IWRut-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#ffa000;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.003;exitY=0.352;exitDx=0;exitDy=0;exitPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-66">
+          <mxGeometry relative="1" x="0.333" as="geometry">
+            <Array as="points">
+              <mxPoint x="50" y="249.4" />
+              <mxPoint x="50" y="162.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-116" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-115" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#ffa000;" value="TTL Ribbon" vertex="1">
+          <mxGeometry relative="1" x="0.333" as="geometry">
+            <mxPoint x="20" y="88" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-148" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-64" source="-IJ7pIzzXDoVgF_IWRut-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fillColor=#fad9d5;strokeColor=#ae4132;" target="-IJ7pIzzXDoVgF_IWRut-65">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="20" y="73.5" />
+              <mxPoint x="20" y="287.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-149" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-148" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#fad9d5;labelBorderColor=#ae4132;" value="IR SIGNAL" vertex="1">
+          <mxGeometry relative="1" x="-0.6126" y="1" as="geometry">
+            <mxPoint x="12" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-68" parent="-IJ7pIzzXDoVgF_IWRut-64" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cfd8dc;strokeColor=#546e7a;align=left;spacingLeft=8;" value="&lt;b&gt;Touchscreen &amp;amp; IR Sensor&lt;/b&gt;&lt;hr&gt;• 4-Wire Resistive Digitizer &amp;rarr; USB&lt;br&gt;• IR Diode &amp;rarr; OEM Bezel Sensor Notch" vertex="1">
+          <mxGeometry height="85" width="215" x="117.5" y="31" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-69" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1;fontSize=13;" value="CENTER CONSOLE - OEM HU-650 / HU-850 RADIO STACK" vertex="1">
+          <mxGeometry height="372.5" width="400" x="10" y="441.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-70" parent="-IJ7pIzzXDoVgF_IWRut-69" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;align=left;spacingLeft=8;" value="&lt;b&gt;OEM HU-650 / HU-850 Connector&lt;/b&gt;&lt;hr&gt;• &lt;font color=&quot;#cc0000&quot;&gt;&lt;b&gt;V_BAT&lt;/b&gt;&lt;/font&gt; (Constant +12V from battery)&lt;br&gt;• &lt;font color=&quot;#ff6600&quot;&gt;&lt;b&gt;ACC&lt;/b&gt;&lt;/font&gt; (Switched +12V Ignition)&lt;br&gt;• &lt;b&gt;GND&lt;/b&gt; (Chassis Ground)" vertex="1">
+          <mxGeometry height="115" width="220" x="110" y="174" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-71" parent="-IJ7pIzzXDoVgF_IWRut-69" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;align=left;spacingLeft=8;" value="&lt;b&gt;WEFA Digital Interface&lt;/b&gt;&lt;hr&gt;• CD Changer Port Emulator&lt;br&gt;• Line-In AUX / Bluetooth Audio&lt;br&gt;• Routed to Factory Car Speakers" vertex="1">
+          <mxGeometry height="115" width="215" x="110" y="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-72" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#eceff1;fontColor=#37474f;strokeColor=#78909c;fontStyle=1;fontSize=13;" value="VEHICLE REAR / EXTERIOR (TAILGATE)" vertex="1">
+          <mxGeometry height="270" width="260" x="1210" y="680" as="geometry">
+            <mxRectangle height="30" width="290" x="1770" y="-12" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-146" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-72" source="-IJ7pIzzXDoVgF_IWRut-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#bac8d3;strokeColor=#23445d;" target="-IJ7pIzzXDoVgF_IWRut-74">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="200" />
+              <mxPoint x="250" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-73" parent="-IJ7pIzzXDoVgF_IWRut-72" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;align=left;spacingLeft=8;" value="&lt;b&gt;Reverse Tail Lamp Harness&lt;/b&gt;&lt;hr&gt;• +12V Line (Active only in reverse gear)&lt;br&gt;&lt;i&gt;Tapped to sense gear engagement&lt;/i&gt;" vertex="1">
+          <mxGeometry height="100" width="220" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-74" parent="-IJ7pIzzXDoVgF_IWRut-72" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;align=left;spacingLeft=8;" value="&lt;b&gt;Rear View Camera&lt;/b&gt;&lt;hr&gt;• Powered by reverse lamp +12V&lt;br&gt;• Analog NTSC/PAL Composite RCA Out" vertex="1">
+          <mxGeometry height="100" width="215" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-75" parent="1" style="swimlane;whiteSpace=wrap;html=1;fillColor=#ede7f6;fontColor=#4a148c;strokeColor=#8e24aa;fontStyle=1;fontSize=14;" value="PASSENGER GLOVEBOX" vertex="1">
+          <mxGeometry height="980" width="780" x="510" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-76" parent="-IJ7pIzzXDoVgF_IWRut-75" style="swimlane;whiteSpace=wrap;html=1;fillColor=#f3e5f5;fontColor=#4a148c;strokeColor=#8e24aa;fontStyle=1;fontSize=11;" value="Raspberry Pi 4 Infotainment Node" vertex="1">
+          <mxGeometry height="240" width="760" x="10" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-77" parent="-IJ7pIzzXDoVgF_IWRut-76" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#7b1fa2;align=left;spacingLeft=8;" value="&lt;b&gt;High-Current USB-C Charger&lt;/b&gt;&lt;hr&gt;IN: 12V from Relay 1 (Main)&lt;br&gt;OUT: 5V / 3A USB-C to Pi 4" vertex="1">
+          <mxGeometry height="80" width="220" x="520" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-78" parent="-IJ7pIzzXDoVgF_IWRut-76" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8bbd0;strokeColor=#c2185b;align=left;spacingLeft=8;" value="&lt;b&gt;Raspberry Pi 4B (openDSH / Dash)&lt;/b&gt;&lt;hr&gt;• Connects to ESP32 Wi-Fi AP&lt;br&gt;• Listens to ACC → Triggers Graceful OS Shutdown&lt;br&gt;• Listens to Reverse Signal → Switches UI to Cam&lt;br&gt;• HDMI Output to RTI" vertex="1">
+          <mxGeometry height="160" width="340" x="40" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-79" parent="-IJ7pIzzXDoVgF_IWRut-76" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede7f6;strokeColor=#512da8;align=left;spacingLeft=8;" value="&lt;b&gt;USB RCA Video Grabber&lt;/b&gt;&lt;hr&gt;IN: Composite RCA Video&lt;br&gt;OUT: USB (/dev/video*) to Pi" vertex="1">
+          <mxGeometry height="80" width="220" x="520" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-103" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#ff6600;strokeWidth=3;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-77">
+          <mxGeometry relative="1" x="0.4976" as="geometry">
+            <Array as="points">
+              <mxPoint x="400" y="230" />
+              <mxPoint x="400" y="195" />
+            </Array>
+            <mxPoint x="-70" y="230" as="sourcePoint" />
+            <mxPoint x="590" y="195" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-104" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-103" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#ff6600;fontStyle=1;" value="Switched 12V" vertex="1">
+          <mxGeometry relative="1" x="0.8656" as="geometry">
+            <mxPoint x="-28" y="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-117" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-76" source="-IJ7pIzzXDoVgF_IWRut-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6a1b9a;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-78">
+          <mxGeometry relative="1" x="-0.011" as="geometry">
+            <Array as="points">
+              <mxPoint x="-100" y="27.5" />
+              <mxPoint x="-100" y="83" />
+            </Array>
+            <mxPoint y="215" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-118" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-117" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#6a1b9a;fontStyle=1;" value="USB Touch Data" vertex="1">
+          <mxGeometry relative="1" x="-0.011" as="geometry">
+            <mxPoint x="34" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-80" parent="-IJ7pIzzXDoVgF_IWRut-75" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1f5fe;fontColor=#01579b;strokeColor=#0288d1;fontStyle=1;fontSize=11;" value="ESP32 Control Box Enclosure (ESPHome)" vertex="1">
+          <mxGeometry height="664" width="750" x="10" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-82" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;align=left;spacingLeft=8;" value="&lt;b&gt;Optocoupler Board (PC817)&lt;/b&gt;&lt;hr&gt;• Input 1: 12V ACC &amp;rarr; Ext0 Wakeup (3.3V)&lt;br&gt;• Input 2: 12V Reverse &amp;rarr; Gear State (3.3V)&lt;br&gt;&lt;i&gt;Complete electrical vehicle isolation&lt;/i&gt;" vertex="1">
+          <mxGeometry height="115" width="240" x="30" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-83" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcedc8;strokeColor=#689f38;align=left;spacingLeft=8;" value="&lt;b&gt;ESP32 DevKit (ESPHome AP)&lt;/b&gt;&lt;hr&gt;• Hosts local Wi-Fi Access Point for Pi 4&lt;br&gt;• Ultra-low power Deep-Sleep when parked&lt;br&gt;• Woken up by ACC high signal (Ext0)&lt;br&gt;• Dispatches state changes (ACC / Reverse)&lt;br&gt;• Runs RTI timed motor sequence (~3.5s)" vertex="1">
+          <mxGeometry height="240" width="280" x="450" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-86" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#d32f2f;align=left;spacingLeft=8;" value="&lt;b&gt;L298N Dual H-Bridge Motor Driver&lt;/b&gt;&lt;hr&gt;• driver powered by 5V fed from Relay 2&lt;br&gt;• Logic: IN1, IN2 driven by ESP32&lt;br&gt;• Output: Direct connection to 12V RTI lift motor" vertex="1">
+          <mxGeometry height="100" width="280" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-101" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2e7d32;strokeWidth=2;exitX=0.005;exitY=0.194;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.002;entryY=0.344;entryDx=0;entryDy=0;entryPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-102" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-101" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#2e7d32;fontStyle=1;" value="IN1, IN2 Direction Control" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-84" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;align=left;spacingLeft=8;" value="&lt;b&gt;Relay 1: Main Switched 12V&lt;/b&gt;&lt;hr&gt;• Powers: Pi Charger &amp;amp; RTD2660H Display&lt;br&gt;• Status: ON during driving&lt;br&gt;• Controlled by ESP32 GPIO" vertex="1">
+          <mxGeometry height="95" width="250" x="45.002525252525174" y="379.99868686868683" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-97" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066cc;strokeWidth=2;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" target="-IJ7pIzzXDoVgF_IWRut-83">
+          <mxGeometry relative="1" x="0.1792" as="geometry">
+            <Array as="points">
+              <mxPoint x="285" y="330" />
+              <mxPoint x="402.5" y="330" />
+              <mxPoint x="402.5" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-98" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-97" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0066cc;fontStyle=1;" value="Continuous 5V" vertex="1">
+          <mxGeometry relative="1" x="0.1792" as="geometry">
+            <mxPoint x="-12" y="25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-145" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-97" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0066cc;fontStyle=1;" value="&lt;div&gt;Switched 5V&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1792" as="geometry">
+            <mxPoint x="-192" y="-164" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-85" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe0b2;strokeColor=#f57c00;align=left;spacingLeft=8;" value="&lt;b&gt;Relay 2: 5V&lt;/b&gt;&lt;hr&gt;• Powers: L298N VCC terminal&lt;br&gt;• Status: Pulsed ON for ~3.5s ONLY&lt;br&gt;• Zero standby current when stationary" vertex="1">
+          <mxGeometry height="95" width="250" x="45.002525252525174" y="162.99868686868683" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-81" parent="-IJ7pIzzXDoVgF_IWRut-80" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#bbdefb;strokeColor=#1976d2;align=left;spacingLeft=8;" value="&lt;b&gt;Buck Converter (LM2596/XL4015)&lt;/b&gt;&lt;hr&gt;IN: Constant 12V (V_BAT)&lt;br&gt;OUT: Continuous 5V for ESP32" vertex="1">
+          <mxGeometry height="80" width="240" x="45" y="279" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-136" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066cc;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.998;exitY=0.18;exitDx=0;exitDy=0;exitPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-85">
+          <mxGeometry relative="1" x="-0.1653" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="293.4" />
+              <mxPoint x="350" y="210.5" />
+            </Array>
+            <mxPoint x="285" y="328" as="sourcePoint" />
+            <mxPoint x="520" y="279" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-138" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066cc;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="-IJ7pIzzXDoVgF_IWRut-86">
+          <mxGeometry relative="1" x="0.0246" as="geometry">
+            <mxPoint x="370" y="231.5" as="sourcePoint" />
+            <mxPoint x="380" y="148.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-139" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2e7d32;strokeWidth=2;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=-0.001;exitY=0.488;exitDx=0;exitDy=0;exitPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-85">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="200" as="sourcePoint" />
+            <mxPoint x="310" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-140" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-139" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#2e7d32;fontStyle=1;" value="Relay2 Control" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-141" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-80" source="-IJ7pIzzXDoVgF_IWRut-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2e7d32;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="-IJ7pIzzXDoVgF_IWRut-84">
+          <mxGeometry relative="1" x="-0.3099" as="geometry">
+            <mxPoint x="585" y="390" as="sourcePoint" />
+            <mxPoint x="360" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-142" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-141" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#2e7d32;fontStyle=1;" value="Relay1 Control" vertex="1">
+          <mxGeometry relative="1" x="-0.3099" as="geometry">
+            <mxPoint x="-25" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-125" edge="1" parent="-IJ7pIzzXDoVgF_IWRut-75" source="-IJ7pIzzXDoVgF_IWRut-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#1565c0;strokeWidth=2;dashed=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-78">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="296" />
+              <mxPoint x="220" y="296" />
+            </Array>
+            <mxPoint x="740" y="457" as="sourcePoint" />
+            <mxPoint x="380" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-126" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-125" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#1565c0;fontStyle=1;" value="Wi-Fi AP Link (ESPHome API / Shutdown &amp;amp; Reverse events)" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-87" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#cc0000;strokeWidth=3;entryX=0.002;entryY=0.555;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-81">
+          <mxGeometry relative="1" x="0.1264" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-88" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-87" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#cc0000;fontStyle=1;labelBackgroundColor=default;" value="12V Constant (V_BAT)" vertex="1">
+          <mxGeometry relative="1" x="0.3552" as="geometry">
+            <mxPoint x="-42" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-89" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#cc0000;strokeWidth=3;entryX=0.004;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-84">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="739.8" />
+            </Array>
+            <mxPoint x="500" y="644" as="sourcePoint" />
+            <mxPoint x="780" y="784" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-91" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#ff6600;strokeWidth=2;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-82">
+          <mxGeometry relative="1" x="0.2031" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="701.8" />
+              <mxPoint x="430" y="867.5" />
+            </Array>
+            <mxPoint x="435" y="593" as="sourcePoint" />
+            <mxPoint x="1050" y="865.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-92" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-91" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#ff6600;fontStyle=1;" value="12V ACC (Ignition)" vertex="1">
+          <mxGeometry relative="1" x="0.2031" as="geometry">
+            <mxPoint x="30" y="38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-93" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#ff6600;strokeWidth=2;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="-IJ7pIzzXDoVgF_IWRut-82">
+          <mxGeometry relative="1" x="-0.0016" as="geometry">
+            <mxPoint x="1691" y="264" as="sourcePoint" />
+            <mxPoint x="1130" y="1004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-94" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-93" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#ff6600;fontStyle=1;" value="12V Reverse Signal" vertex="1">
+          <mxGeometry relative="1" x="-0.0016" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-95" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#2e7d32;strokeWidth=2;" target="-IJ7pIzzXDoVgF_IWRut-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-96" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-95" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#2e7d32;fontStyle=1;" value="Isolated GPIO Signals" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-105" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#ff6600;strokeWidth=3;entryX=0.997;entryY=0.57;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-65">
+          <mxGeometry relative="1" x="0.4184" as="geometry">
+            <Array as="points">
+              <mxPoint x="450" y="771.2" />
+              <mxPoint x="450" y="274.2" />
+            </Array>
+            <mxPoint x="1110" y="664" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-106" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-105" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#ff6600;fontStyle=1;" value="&lt;div&gt;Switched 12V&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.5382" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-109" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#d84315;strokeWidth=3;entryX=1.001;entryY=0.673;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-67">
+          <mxGeometry relative="1" x="-0.2194" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-110" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-109" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#d84315;fontStyle=1;" value="12V DC Motor Lift / Lower Leads" vertex="1">
+          <mxGeometry relative="1" x="-0.0633" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-111" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#0066cc;strokeWidth=2;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-78">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="213" />
+              <mxPoint x="1010" y="213" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-112" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-111" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#0066cc;fontStyle=1;" value="5V USB-C (3A)" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-119" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#455a64;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-120" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-119" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#455a64;fontStyle=1;" value="RCA Composite Video Line" vertex="1">
+          <mxGeometry relative="1" x="-0.3378" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-121" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6a1b9a;strokeWidth=2;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-122" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-121" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#6a1b9a;fontStyle=1;" value="USB (/dev/video*)" vertex="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-113" edge="1" parent="1" source="-IJ7pIzzXDoVgF_IWRut-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6a1b9a;strokeWidth=3;exitX=0.007;exitY=0.385;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitPerimeter=0;" target="-IJ7pIzzXDoVgF_IWRut-65">
+          <mxGeometry relative="1" x="-0.1871" as="geometry">
+            <mxPoint x="1099.9999997474747" y="341.50131313131317" as="sourcePoint" />
+            <mxPoint x="590" y="94" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-114" connectable="0" parent="-IJ7pIzzXDoVgF_IWRut-113" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#6a1b9a;fontStyle=1;" value="HDMI Video Cable" vertex="1">
+          <mxGeometry relative="1" x="-0.0963" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-IJ7pIzzXDoVgF_IWRut-151" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#cc0000;strokeWidth=3;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="-IJ7pIzzXDoVgF_IWRut-86">
+          <mxGeometry relative="1" x="-1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="410" />
+            </Array>
+            <mxPoint x="500" y="650" as="sourcePoint" />
+            <mxPoint x="560" y="615.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
