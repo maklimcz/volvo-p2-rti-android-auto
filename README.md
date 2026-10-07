@@ -3,6 +3,7 @@
 An integrated Android Auto system retrofitted into the factory motorized RTI (Road and Traffic Information) navigation housing of a 2005 Volvo XC70 (P2 platform). 
 
 The project uses an **ESP32** microcontroller as a power management and motor controller unit (running ESPHome), and a **Raspberry Pi 4** running [openDSH (Dash)](https://github.com/openDsh/dash) as the main infotainment head unit.
+![RTI](rti.jpg)
 
 ---
 
@@ -161,6 +162,13 @@ It is strongly recommended to install an independent **MagSafe / Qi wireless pho
 * Timing is configured in software:
   * **Up Sequence:** Relay 2 ON -> `IN1 = HIGH`, `IN2 = LOW` for ~3.5s -> `IN1 = LOW`, `IN2 = LOW` -> Relay 2 OFF.
   * **Down Sequence:** Relay 2 ON -> `IN1 = LOW`, `IN2 = HIGH` for ~3.5s -> `IN1 = LOW`, `IN2 = LOW` -> Relay 2 OFF.
+
+<details>
+  <summary>**🔍 Beware, wiring mess inside**</summary>
+    
+![Wiring-mess](wiring_mess.jpg) 
+</details>
+
 
 ---
 
